@@ -56,6 +56,7 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Dashboard'),
+        centerTitle: true;
       ),
       body: StreamBuilder<List<GroupModel>>(
         stream: context.read<GroupService>().getUserGroups(user.uid),
